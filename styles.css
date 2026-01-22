@@ -181,7 +181,7 @@ body {
 
 /* Year Cards */
 .year-card {
-  display: none;
+  display: block;
   border-radius: 20px;
   padding: 32px;
   border: 1px solid color-mix(in srgb, var(--year-color, #888) 27%, transparent);
@@ -189,10 +189,6 @@ body {
   overflow: hidden;
   max-width: 900px;
   margin: 0 auto 24px;
-}
-
-.year-card.active {
-  display: block;
 }
 
 .year-card-glow {
