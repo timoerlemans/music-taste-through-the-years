@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Music History | Spotify Top 100 Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-glow"></div>
+    <h1 class="header-title">Your Music History</h1>
+    <p class="header-subtitle">2017 — 2025 · 9 years · 901 tracks</p>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="timeline">🎵 Timeline</button>
+    <button class="tab-btn" data-tab="overview">📊 Overview</button>
+    <button class="tab-btn" data-tab="genres">🎸 Genres</button>
+    <button class="tab-btn" data-tab="mood">💫 Mood</button>
+    <button class="tab-btn" data-tab="artists">🎤 Artists</button>
+  </nav>
+
+  <!-- TIMELINE TAB -->
+  <section id="timeline" class="tab-content active">
+    <!-- Timeline Flow -->
+    <div class="timeline-flow">
+      <div class="timeline-item" data-year="2017">
+        <div class="timeline-circle" style="--genre-color: #00d4ff; background: linear-gradient(135deg, #0a1628 0%, #0d2137 100%);">🎛️</div>
+        <span class="timeline-year" style="color: #00d4ff;">2017</span>
+        <span class="timeline-genre">Minimal Techno</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #00d4ff, #ff0066);"></div>
+      
+      <div class="timeline-item" data-year="2018">
+        <div class="timeline-circle" style="--genre-color: #ff0066; background: linear-gradient(135deg, #1a0a14 0%, #2d1020 100%);">🎸</div>
+        <span class="timeline-year" style="color: #ff0066;">2018</span>
+        <span class="timeline-genre">Punk / Pop Punk</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #ff0066, #9933ff);"></div>
+      
+      <div class="timeline-item" data-year="2019">
+        <div class="timeline-circle" style="--genre-color: #9933ff; background: linear-gradient(135deg, #0f0a1a 0%, #1a1030 100%);">🌑</div>
+        <span class="timeline-year" style="color: #9933ff;">2019</span>
+        <span class="timeline-genre">Industrial / IDM</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #9933ff, #66cc33);"></div>
+      
+      <div class="timeline-item" data-year="2020">
+        <div class="timeline-circle" style="--genre-color: #66cc33; background: linear-gradient(135deg, #0a1a0f 0%, #152815 100%);">🎹</div>
+        <span class="timeline-year" style="color: #66cc33;">2020</span>
+        <span class="timeline-genre">Indie Rock</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #66cc33, #0066ff);"></div>
+      
+      <div class="timeline-item" data-year="2021">
+        <div class="timeline-circle" style="--genre-color: #0066ff; background: linear-gradient(135deg, #0a0f1a 0%, #101a2d 100%);">⚡</div>
+        <span class="timeline-year" style="color: #0066ff;">2021</span>
+        <span class="timeline-genre">Techno Revival</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #0066ff, #ff9900);"></div>
+      
+      <div class="timeline-item" data-year="2022">
+        <div class="timeline-circle" style="--genre-color: #ff9900; background: linear-gradient(135deg, #1a140a 0%, #2d200f 100%);">🇳🇱</div>
+        <span class="timeline-year" style="color: #ff9900;">2022</span>
+        <span class="timeline-genre">Nederpop</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #ff9900, #ffcc00);"></div>
+      
+      <div class="timeline-item" data-year="2023">
+        <div class="timeline-circle" style="--genre-color: #ffcc00; background: linear-gradient(135deg, #1a1a0a 0%, #2d2a0f 100%);">🎭</div>
+        <span class="timeline-year" style="color: #ffcc00;">2023</span>
+        <span class="timeline-genre">Dutch Chanson</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #ffcc00, #cc99ff);"></div>
+      
+      <div class="timeline-item" data-year="2024">
+        <div class="timeline-circle" style="--genre-color: #cc99ff; background: linear-gradient(135deg, #14101a 0%, #201828 100%);">🎧</div>
+        <span class="timeline-year" style="color: #cc99ff;">2024</span>
+        <span class="timeline-genre">Acoustic / Emo</span>
+      </div>
+      <div class="timeline-connector" style="background: linear-gradient(90deg, #cc99ff, #cc0000);"></div>
+      
+      <div class="timeline-item active" data-year="2025">
+        <div class="timeline-circle" style="--genre-color: #cc0000; background: linear-gradient(135deg, #1a0a0a 0%, #2d0f0f 100%);">🔥</div>
+        <span class="timeline-year" style="color: #cc0000;">2025</span>
+        <span class="timeline-genre">Metalcore</span>
+      </div>
+    </div>
+
+    <!-- Year Detail Cards -->
+    <article class="year-card" data-year="2017" style="--year-color: #00d4ff; background: linear-gradient(135deg, #0a1628 0%, #0d2137 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #00d4ff15 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🎛️</span>
+          <div>
+            <div class="year-card-year">2017</div>
+            <div class="year-card-genre">Minimal Techno</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Electronic · Danceable · Underground</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Melodic Techno</span>
+          <span class="subgenre-tag">Drum & Bass</span>
+          <span class="subgenre-tag">Dubstep</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Kollektiv Turmstrasse</p><p class="artist-track">Sorry I Am Late</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Mala & Distance</p><p class="artist-track">Changes</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Bedouin Soundclash</p><p class="artist-track">Brutal Hearts</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">Kölsch</p><p class="artist-track">Grey</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Blue Swede</p><p class="artist-track">Hooked On A Feeling</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Maceo Plex & DNCN</p><p class="artist-track">Polygon Pulse</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Vaal & Locked Groove</p><p class="artist-track">Wander To Hell</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">Noisia & Mat Zo</p><p class="artist-track">Mantra</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Van Echelpoel</p><p class="artist-track">Ziet Em Duun</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Limp Bizkit</p><p class="artist-track">Faith</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2018" style="--year-color: #ff0066; background: linear-gradient(135deg, #1a0a14 0%, #2d1020 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #ff006615 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🎸</span>
+          <div>
+            <div class="year-card-year">2018</div>
+            <div class="year-card-genre">Punk / Pop Punk</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Energetic · Rebellious · Nostalgic</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Emo</span>
+          <span class="subgenre-tag">Skate Punk</span>
+          <span class="subgenre-tag">Nu Metal</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Blue Swede</p><p class="artist-track">Hooked On A Feeling</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Pixies</p><p class="artist-track">Where Is My Mind?</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Has Drijver</p><p class="artist-track">Dat is waar</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">The Gaslight Anthem</p><p class="artist-track">We Came To Dance</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Slipknot</p><p class="artist-track">Psychosocial</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Dropkick Murphys</p><p class="artist-track">Johnny, I Hardly Knew Ya</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">The Decemberists</p><p class="artist-track">The Crane Wife 3</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">Them Crooked Vultures</p><p class="artist-track">No One Loves Me</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">ODESZA</p><p class="artist-track">Memories That You Call</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">blink-182</p><p class="artist-track">Stockholm Syndrome</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2019" style="--year-color: #9933ff; background: linear-gradient(135deg, #0f0a1a 0%, #1a1030 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #9933ff15 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🌑</span>
+          <div>
+            <div class="year-card-year">2019</div>
+            <div class="year-card-genre">Industrial / IDM</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Dark · Atmospheric · Intense</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Downtempo</span>
+          <span class="subgenre-tag">Trip-Hop</span>
+          <span class="subgenre-tag">Minimal Techno</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Rammstein</p><p class="artist-track">Sonne</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Robag Wruhme</p><p class="artist-track">Provol Eto</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Emancipator</p><p class="artist-track">Baralku</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">The Decemberists</p><p class="artist-track">The Crane Wife 3</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Teho Teardo & Blixa</p><p class="artist-track">Still Smiling</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Occer</p><p class="artist-track">The Tank</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Four Tet</p><p class="artist-track">SW9 9SL</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">Rise Against</p><p class="artist-track">Prayer Of The Refugee</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Randy Newman</p><p class="artist-track">You've Got a Friend in Me</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Christian Löffler</p><p class="artist-track">Neo</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2020" style="--year-color: #66cc33; background: linear-gradient(135deg, #0a1a0f 0%, #152815 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #66cc3315 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🎹</span>
+          <div>
+            <div class="year-card-year">2020</div>
+            <div class="year-card-genre">Indie Rock</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Eclectic · Reflective · Diverse</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Post-Punk</span>
+          <span class="subgenre-tag">Classic Rock</span>
+          <span class="subgenre-tag">Industrial</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Interpol</p><p class="artist-track">Rest My Chemistry</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Maceo Plex</p><p class="artist-track">Sparks Of Life</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Rammstein</p><p class="artist-track">Rosenrot</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">AnnenMayKantereit</p><p class="artist-track">Pocahontas</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Peter Bjorn and John</p><p class="artist-track">Young Folks</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Bedouin Soundclash</p><p class="artist-track">Brutal Hearts</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Noisia</p><p class="artist-track">Tentacles</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">Maceo Plex & DNCN</p><p class="artist-track">Polygon Pulse</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Arcade Fire</p><p class="artist-track">No Cars Go</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Brittany Howard</p><p class="artist-track">Stay High</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2021" style="--year-color: #0066ff; background: linear-gradient(135deg, #0a0f1a 0%, #101a2d 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #0066ff15 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">⚡</span>
+          <div>
+            <div class="year-card-year">2021</div>
+            <div class="year-card-genre">Techno Revival</div>
+          </div>
+        </div>
+        <p class="year-card-mood">High Energy · Club · Hybrid</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Acid Techno</span>
+          <span class="subgenre-tag">Punk</span>
+          <span class="subgenre-tag">Classic Rock</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Frank Carter</p><p class="artist-track">Go Get A Tattoo</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Fleetwood Mac</p><p class="artist-track">Go Your Own Way</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">The Darkness</p><p class="artist-track">I Believe in a Thing Called Love</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">Stevie Nicks</p><p class="artist-track">Edge of Seventeen</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Stealers Wheel</p><p class="artist-track">Stuck In The Middle</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">LEN</p><p class="artist-track">Steal My Sunshine</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Jet</p><p class="artist-track">Are You Gonna Be My Girl</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">The Who</p><p class="artist-track">Baba O'Riley</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Gang of Youths</p><p class="artist-track">the angel of 8th ave.</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Maceo Plex & DNCN</p><p class="artist-track">Polygon Pulse</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2022" style="--year-color: #ff9900; background: linear-gradient(135deg, #1a140a 0%, #2d200f 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #ff990015 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🇳🇱</span>
+          <div>
+            <div class="year-card-year">2022</div>
+            <div class="year-card-genre">Nederpop</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Political · Fun · Dutch Language</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Dutch Punk</span>
+          <span class="subgenre-tag">Rock</span>
+          <span class="subgenre-tag">Pop Punk</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Hang Youth</p><p class="artist-track">JE HAAT GEEN MAANDAG...</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">WIES</p><p class="artist-track">Soms Is Het Te Laat</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">DoeMaarDave</p><p class="artist-track">Fuifje</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">Opgezwolle</p><p class="artist-track">Regendans</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Editors</p><p class="artist-track">Smokers Outside The Hospital</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Reinier Zonneveld</p><p class="artist-track">Pet van Ket</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">blink-182</p><p class="artist-track">Stockholm Syndrome</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">Rammstein</p><p class="artist-track">Deutschland</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Froukje</p><p class="artist-track">Onbezonnen</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">YUNGBLUD</p><p class="artist-track">The Funeral</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2023" style="--year-color: #ffcc00; background: linear-gradient(135deg, #1a1a0a 0%, #2d2a0f 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #ffcc0015 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🎭</span>
+          <div>
+            <div class="year-card-year">2023</div>
+            <div class="year-card-genre">Dutch Chanson</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Theatrical · Nostalgic · Warm</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Nederpop</span>
+          <span class="subgenre-tag">Classic Rock</span>
+          <span class="subgenre-tag">Pop Punk</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Herman van Veen</p><p class="artist-track">Zo Vrolijk</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Electric Callboy</p><p class="artist-track">Hypa Hypa</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">De Alpenzusjes</p><p class="artist-track">Kontebonke</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">blink-182</p><p class="artist-track">ONE MORE TIME</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Clumdoipethi</p><p class="artist-track">Mojax</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">Goldband</p><p class="artist-track">Noodgeval</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Woganites</p><p class="artist-track">Feallesh</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">The Blaze</p><p class="artist-track">MOUNT</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Fleetwood Mac</p><p class="artist-track">Dreams</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Sigurd Barrett</p><p class="artist-track">Pilfingerdansen</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card" data-year="2024" style="--year-color: #cc99ff; background: linear-gradient(135deg, #14101a 0%, #201828 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #cc99ff15 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🎧</span>
+          <div>
+            <div class="year-card-year">2024</div>
+            <div class="year-card-genre">Acoustic / Emo</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Soft · Emotional · Mixed</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Pop Punk</span>
+          <span class="subgenre-tag">Classic Rock</span>
+          <span class="subgenre-tag">Ambient</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Ricardo Henriquez</p><p class="artist-track">Beautiful Place</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">White As Snow</p><p class="artist-track">Miracle of Grace</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Iggy Pop</p><p class="artist-track">The Passenger</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">Nederlander</p><p class="artist-track">Nascondino</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">My Chemical Romance</p><p class="artist-track">Welcome to the Black Parade</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">KannKuma</p><p class="artist-track">It's Time to Sleep</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Cadeautje voor jou</p><p class="artist-track">Jip, Dit Is Je Verjaardag</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">blink-182</p><p class="artist-track">Feeling This</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">NOFX</p><p class="artist-track">Linoleum</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">Focus</p><p class="artist-track">Hocus Pocus 2010</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="year-card active" data-year="2025" style="--year-color: #cc0000; background: linear-gradient(135deg, #1a0a0a 0%, #2d0f0f 100%);">
+      <div class="year-card-glow" style="background: radial-gradient(circle, #cc000015 0%, transparent 60%);"></div>
+      <div class="year-card-content">
+        <div class="year-card-header">
+          <span class="year-card-icon">🔥</span>
+          <div>
+            <div class="year-card-year">2025</div>
+            <div class="year-card-genre">Metalcore</div>
+          </div>
+        </div>
+        <p class="year-card-mood">Heavy · Intense · Cathartic</p>
+        <div class="year-card-subgenres">
+          <span class="subgenre-tag">Post-Hardcore</span>
+          <span class="subgenre-tag">Djent</span>
+          <span class="subgenre-tag">Progressive Metal</span>
+        </div>
+        <div class="year-card-artists">
+          <h4>Top 10 Artists</h4>
+          <div class="artists-grid">
+            <div class="artist-item"><span class="artist-rank gold">1</span><div class="artist-info"><p class="artist-name">Sophie Straat</p><p class="artist-track">Vrijheid, Gelijkheid, Zusterschap</p></div></div>
+            <div class="artist-item"><span class="artist-rank silver">2</span><div class="artist-info"><p class="artist-name">Sleep Token</p><p class="artist-track">Caramel</p></div></div>
+            <div class="artist-item"><span class="artist-rank bronze">3</span><div class="artist-info"><p class="artist-name">Architects</p><p class="artist-track">Animals</p></div></div>
+            <div class="artist-item"><span class="artist-rank">4</span><div class="artist-info"><p class="artist-name">Stray From The Path</p><p class="artist-track">III</p></div></div>
+            <div class="artist-item"><span class="artist-rank">5</span><div class="artist-info"><p class="artist-name">Bring Me The Horizon</p><p class="artist-track">Throne</p></div></div>
+            <div class="artist-item"><span class="artist-rank">6</span><div class="artist-info"><p class="artist-name">We Came As Romans</p><p class="artist-track">Black Hole</p></div></div>
+            <div class="artist-item"><span class="artist-rank">7</span><div class="artist-info"><p class="artist-name">Slipknot</p><p class="artist-track">(sic)</p></div></div>
+            <div class="artist-item"><span class="artist-rank">8</span><div class="artist-info"><p class="artist-name">A Day To Remember</p><p class="artist-track">The Downfall Of Us All</p></div></div>
+            <div class="artist-item"><span class="artist-rank">9</span><div class="artist-info"><p class="artist-name">Enter Shikari</p><p class="artist-track">Sorry You're Not a Winner</p></div></div>
+            <div class="artist-item"><span class="artist-rank">10</span><div class="artist-info"><p class="artist-name">We Came As Romans</p><p class="artist-track">Cold Like War</p></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- OVERVIEW TAB -->
+  <section id="overview" class="tab-content">
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <p class="stat-label">Most loyal artist</p>
+        <p class="stat-value">Rise Against</p>
+        <p class="stat-sub">7 of 9 years</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Dominant phase</p>
+        <p class="stat-value">Nederpop (2022-23)</p>
+        <p class="stat-sub">Hang Youth, WIES, Herman van Veen</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Biggest shift</p>
+        <p class="stat-value">2025 → Metalcore</p>
+        <p class="stat-sub">Sleep Token, Architects</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Evergreen track</p>
+        <p class="stat-value">Go Your Own Way</p>
+        <p class="stat-sub">Fleetwood Mac · 5 years</p>
+      </div>
+    </div>
+
+    <!-- Diversity Chart -->
+    <div class="chart-card">
+      <h3>Diversity Over Time</h3>
+      <div class="chart-container">
+        <canvas id="diversityChart"></canvas>
+      </div>
+      <p class="chart-note">📉 2025 shows the most focused taste: only 41 artists and 28 genres — metalcore dominates completely</p>
+    </div>
+
+    <!-- Top Artists All Time -->
+    <div class="card">
+      <h3>Top 10 Artists (weighted score)</h3>
+      <div class="top-artists-list">
+        <div class="top-artist-row">
+          <span class="top-artist-rank top-3">1</span>
+          <span class="top-artist-name">blink-182</span>
+          <div class="top-artist-bar" style="width: 100%;"></div>
+          <span class="top-artist-appearances">28× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank top-3">2</span>
+          <span class="top-artist-name">Hang Youth</span>
+          <div class="top-artist-bar" style="width: 63.5%;"></div>
+          <span class="top-artist-appearances">17× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank top-3">3</span>
+          <span class="top-artist-name">Rammstein</span>
+          <div class="top-artist-bar" style="width: 55.9%;"></div>
+          <span class="top-artist-appearances">14× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">4</span>
+          <span class="top-artist-name">BZB</span>
+          <div class="top-artist-bar" style="width: 48.5%;"></div>
+          <span class="top-artist-appearances">17× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">5</span>
+          <span class="top-artist-name">Sleep Token</span>
+          <div class="top-artist-bar" style="width: 46.9%;"></div>
+          <span class="top-artist-appearances">12× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">6</span>
+          <span class="top-artist-name">Fleetwood Mac</span>
+          <div class="top-artist-bar" style="width: 45.7%;"></div>
+          <span class="top-artist-appearances">13× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">7</span>
+          <span class="top-artist-name">Rise Against</span>
+          <div class="top-artist-bar" style="width: 44.1%;"></div>
+          <span class="top-artist-appearances">17× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">8</span>
+          <span class="top-artist-name">WIES</span>
+          <div class="top-artist-bar" style="width: 43.9%;"></div>
+          <span class="top-artist-appearances">10× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">9</span>
+          <span class="top-artist-name">Herman van Veen</span>
+          <div class="top-artist-bar" style="width: 34.2%;"></div>
+          <span class="top-artist-appearances">7× in list</span>
+        </div>
+        <div class="top-artist-row">
+          <span class="top-artist-rank">10</span>
+          <span class="top-artist-name">The Decemberists</span>
+          <div class="top-artist-bar" style="width: 30.5%;"></div>
+          <span class="top-artist-appearances">8× in list</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GENRES TAB -->
+  <section id="genres" class="tab-content">
+    <div class="card">
+      <h3>Genre Evolution by Year</h3>
+      
+      <!-- Year Selector Buttons -->
+      <div class="year-selector">
+        <button class="year-btn" data-year="2017">2017</button>
+        <button class="year-btn" data-year="2018">2018</button>
+        <button class="year-btn" data-year="2019">2019</button>
+        <button class="year-btn" data-year="2020">2020</button>
+        <button class="year-btn" data-year="2021">2021</button>
+        <button class="year-btn" data-year="2022">2022</button>
+        <button class="year-btn" data-year="2023">2023</button>
+        <button class="year-btn" data-year="2024">2024</button>
+        <button class="year-btn active" data-year="2025">2025</button>
+      </div>
+
+      <!-- Genre Bars for Each Year -->
+      <div class="genre-bars-container">
+        <div class="genre-bars" data-year="2017">
+          <h4>2017: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">minimal techno</span><span class="genre-pct">18%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 18%; background: linear-gradient(90deg, #00d4ff, #00d4ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">melodic techno</span><span class="genre-pct">16%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 16%; background: linear-gradient(90deg, #0099cc, #0099cc88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">electronica</span><span class="genre-pct">13%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 13%; background: linear-gradient(90deg, #66ffff, #66ffff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">drum and bass</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #ff6600, #ff660088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">dubstep</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #ff3300, #ff330088);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2018">
+          <h4>2018: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">punk</span><span class="genre-pct">24%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 24%; background: linear-gradient(90deg, #ff0066, #ff006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">pop punk</span><span class="genre-pct">16%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 16%; background: linear-gradient(90deg, #ff3399, #ff339988);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">rock</span><span class="genre-pct">12%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 12%; background: linear-gradient(90deg, #cc0033, #cc003388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">emo</span><span class="genre-pct">11%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 11%; background: linear-gradient(90deg, #990066, #99006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">metal</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #660033, #66003388);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2019">
+          <h4>2019: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">idm</span><span class="genre-pct">15%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 15%; background: linear-gradient(90deg, #9933ff, #9933ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">downtempo</span><span class="genre-pct">14%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 14%; background: linear-gradient(90deg, #6600cc, #6600cc88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">industrial</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #333333, #33333388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">minimal techno</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #00d4ff, #00d4ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">classic rock</span><span class="genre-pct">8%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 8%; background: linear-gradient(90deg, #ffcc00, #ffcc0088);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2020">
+          <h4>2020: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">indie rock</span><span class="genre-pct">13%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 13%; background: linear-gradient(90deg, #99cc00, #99cc0088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">drum and bass</span><span class="genre-pct">11%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 11%; background: linear-gradient(90deg, #ff6600, #ff660088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">classic rock</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #ffcc00, #ffcc0088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">minimal techno</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #00d4ff, #00d4ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">industrial</span><span class="genre-pct">8%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 8%; background: linear-gradient(90deg, #333333, #33333388);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2021">
+          <h4>2021: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">techno</span><span class="genre-pct">18%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 18%; background: linear-gradient(90deg, #0066ff, #0066ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">minimal techno</span><span class="genre-pct">14%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 14%; background: linear-gradient(90deg, #00d4ff, #00d4ff88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">punk</span><span class="genre-pct">12%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 12%; background: linear-gradient(90deg, #ff0066, #ff006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">melodic techno</span><span class="genre-pct">11%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 11%; background: linear-gradient(90deg, #0099cc, #0099cc88);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">progressive house</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #3366ff, #3366ff88);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2022">
+          <h4>2022: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">nederpop</span><span class="genre-pct">33%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 33%; background: linear-gradient(90deg, #ff9900, #ff990088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">punk</span><span class="genre-pct">13%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 13%; background: linear-gradient(90deg, #ff0066, #ff006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">rock</span><span class="genre-pct">12%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 12%; background: linear-gradient(90deg, #cc0033, #cc003388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">pop punk</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #ff3399, #ff339988);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">emo</span><span class="genre-pct">8%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 8%; background: linear-gradient(90deg, #990066, #99006688);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2023">
+          <h4>2023: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">dutch</span><span class="genre-pct">19%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 19%; background: linear-gradient(90deg, #ffbb33, #ffbb3388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">nederpop</span><span class="genre-pct">17%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 17%; background: linear-gradient(90deg, #ff9900, #ff990088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">punk</span><span class="genre-pct">10%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 10%; background: linear-gradient(90deg, #ff0066, #ff006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">pop punk</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #ff3399, #ff339988);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">classic rock</span><span class="genre-pct">8%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 8%; background: linear-gradient(90deg, #ffcc00, #ffcc0088);"></div></div></div>
+        </div>
+
+        <div class="genre-bars" data-year="2024">
+          <h4>2024: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">punk</span><span class="genre-pct">17%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 17%; background: linear-gradient(90deg, #ff0066, #ff006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">pop punk</span><span class="genre-pct">16%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 16%; background: linear-gradient(90deg, #ff3399, #ff339988);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">rock</span><span class="genre-pct">15%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 15%; background: linear-gradient(90deg, #cc0033, #cc003388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">emo</span><span class="genre-pct">14%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 14%; background: linear-gradient(90deg, #990066, #99006688);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">dutch</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #ffbb33, #ffbb3388);"></div></div></div>
+        </div>
+
+        <div class="genre-bars active" data-year="2025">
+          <h4>2025: Top 5 Genres</h4>
+          <div class="genre-bar-item"><span class="genre-name">metalcore</span><span class="genre-pct">32%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 32%; background: linear-gradient(90deg, #cc0000, #cc000088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">post-hardcore</span><span class="genre-pct">16%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 16%; background: linear-gradient(90deg, #990000, #99000088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">metal</span><span class="genre-pct">15%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 15%; background: linear-gradient(90deg, #660033, #66003388);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">hardcore punk</span><span class="genre-pct">9%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 9%; background: linear-gradient(90deg, #660000, #66000088);"></div></div></div>
+          <div class="genre-bar-item"><span class="genre-name">djent</span><span class="genre-pct">8%</span><div class="genre-bar-track"><div class="genre-bar-fill" style="width: 8%; background: linear-gradient(90deg, #440000, #44000088);"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Genre Journey -->
+    <div class="card">
+      <h3>The Genre Journey</h3>
+      <div class="genre-journey">
+        <div class="journey-item" data-year="2017">
+          <span class="journey-emoji">🎛️</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2017</span><span class="journey-genre">Techno & Electronica</span></div>
+            <p class="journey-desc">Minimal techno, melodic techno, drum & bass</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2018">
+          <span class="journey-emoji">🎸</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2018</span><span class="journey-genre">Punk Explosion</span></div>
+            <p class="journey-desc">Pop punk, emo, skate punk — the guitars arrive</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2019">
+          <span class="journey-emoji">🌑</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2019</span><span class="journey-genre">Dark Period</span></div>
+            <p class="journey-desc">IDM, industrial (Rammstein), downtempo</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2020">
+          <span class="journey-emoji">🎹</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2020</span><span class="journey-genre">Indie Rock & Eclectic</span></div>
+            <p class="journey-desc">Interpol, Rammstein, classic rock</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2021">
+          <span class="journey-emoji">⚡</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2021</span><span class="journey-genre">Techno Revival</span></div>
+            <p class="journey-desc">Back to the beats + punk stays</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2022">
+          <span class="journey-emoji">🇳🇱</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2022</span><span class="journey-genre">Dutch Wave</span></div>
+            <p class="journey-desc">WIES, Hang Youth, nederpop dominates</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2023">
+          <span class="journey-emoji">🎭</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2023</span><span class="journey-genre">Herman van Veen Phase</span></div>
+            <p class="journey-desc">Dutch chansons + punk undercurrent</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2024">
+          <span class="journey-emoji">🎧</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2024</span><span class="journey-genre">Calm & Punk Mix</span></div>
+            <p class="journey-desc">Acoustic alongside emo and pop punk</p>
+          </div>
+        </div>
+        <div class="journey-item" data-year="2025">
+          <span class="journey-emoji">🔥</span>
+          <div class="journey-content">
+            <div class="journey-header"><span class="journey-year">2025</span><span class="journey-genre">Metalcore Dominance</span></div>
+            <p class="journey-desc">Sleep Token, Architects — heavy and intense</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOOD TAB -->
+  <section id="mood" class="tab-content">
+    <div class="chart-card">
+      <h3>Mood Through the Years (Valence = positivity)</h3>
+      <div class="chart-container">
+        <canvas id="valenceChart"></canvas>
+      </div>
+      <div class="mood-summary">
+        <div class="mood-stat low">
+          <p class="mood-years">2019 & 2025</p>
+          <p class="mood-label">Lowest valence (~35%)</p>
+          <p class="mood-desc">Darker, more intense music</p>
+        </div>
+        <div class="mood-stat high">
+          <p class="mood-years">2022-2023</p>
+          <p class="mood-label">Highest valence (~55%)</p>
+          <p class="mood-desc">Dutch party music</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Energy vs Acousticness</h3>
+      <div class="chart-container">
+        <canvas id="energyChart"></canvas>
+      </div>
+      <p class="chart-note">🔥 2025 combines the highest energy (87%) with the lowest acousticness (2%) — pure metalcore intensity</p>
+    </div>
+  </section>
+
+  <!-- ARTISTS TAB -->
+  <section id="artists" class="tab-content">
+    <div class="card">
+      <h3>Recurring Artists (3+ years)</h3>
+      <div class="recurring-artists-container">
+        <div class="recurring-artists-header">
+          <div class="artist-name-col"></div>
+          <div class="years-row">
+            <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row">
+          <div class="artist-name-col">Rise Against</div>
+          <div class="years-row">
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row alt">
+          <div class="artist-name-col">Enter Shikari</div>
+          <div class="years-row">
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row">
+          <div class="artist-name-col">Fleetwood Mac</div>
+          <div class="years-row">
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row alt">
+          <div class="artist-name-col">blink-182</div>
+          <div class="years-row">
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row">
+          <div class="artist-name-col">Sum 41</div>
+          <div class="years-row">
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row alt">
+          <div class="artist-name-col">The Decemberists</div>
+          <div class="years-row">
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row">
+          <div class="artist-name-col">Dropkick Murphys</div>
+          <div class="years-row">
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row alt">
+          <div class="artist-name-col">Dire Straits</div>
+          <div class="years-row">
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row">
+          <div class="artist-name-col">BZB</div>
+          <div class="years-row">
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+        
+        <div class="recurring-artist-row alt">
+          <div class="artist-name-col">Rammstein</div>
+          <div class="years-row">
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot active"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+            <span class="year-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artist Insights -->
+    <div class="insights-grid">
+      <div class="insight-card">
+        <h4 class="insight-title green">🏆 Constant Favorites</h4>
+        <p class="insight-text"><strong>Rise Against</strong> and <strong>Enter Shikari</strong> persist through the years — punk and post-hardcore as a common thread.</p>
+      </div>
+      <div class="insight-card">
+        <h4 class="insight-title red">💥 One-Hit Wonders</h4>
+        <p class="insight-text"><strong>Sleep Token</strong> (2025) and <strong>WIES</strong> (2022) completely dominate one year and then disappear.</p>
+      </div>
+      <div class="insight-card">
+        <h4 class="insight-title gold">🔄 Comeback Artists</h4>
+        <p class="insight-text"><strong>BZB</strong> disappears after 2018, returns in 2023-24. <strong>Fleetwood Mac</strong> stays relevant across 6 years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Based on 901 tracks from your Spotify "Wrapped" playlists (2017-2025)</p>
+    <p>Position in list = listening frequency · Top 10 weighs more than position 51-100</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
