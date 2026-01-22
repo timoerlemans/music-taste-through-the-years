@@ -30,7 +30,6 @@ function initTabs() {
 // Year Selection (Timeline + Genres tab)
 function initYearSelection() {
   const timelineItems = document.querySelectorAll('.timeline-item');
-  const yearCards = document.querySelectorAll('.year-card');
   const yearBtns = document.querySelectorAll('.year-btn');
   const genreBars = document.querySelectorAll('.genre-bars');
   const journeyItems = document.querySelectorAll('.journey-item');
@@ -41,10 +40,7 @@ function initYearSelection() {
       item.classList.toggle('active', item.dataset.year === year);
     });
     
-    // Update year cards
-    yearCards.forEach(card => {
-      card.classList.toggle('active', card.dataset.year === year);
-    });
+    // Year cards are now always visible, no toggle needed
     
     // Update year buttons in genres tab
     yearBtns.forEach(btn => {
