@@ -1,0 +1,765 @@
+{
+  "metadata": {
+    "totalTracks": 401,
+    "yearRange": "2022 — 2025",
+    "yearsCount": 4,
+    "generatedAt": "2026-01-23T14:52:06.686Z"
+  },
+  "years": [
+    {
+      "year": 2022,
+      "label": "Nederpop / Punk",
+      "emoji": "🇳🇱",
+      "color": "#f59e0b",
+      "background": "linear-gradient(135deg, #f59e0b22 0%, #f59e0b44 100%)",
+      "mood": "Political · Fun · Dutch Language",
+      "trackCount": 101,
+      "uniqueArtists": 67,
+      "uniqueGenres": 66,
+      "audioFeatures": {
+        "danceability": 0.528,
+        "energy": 0.731,
+        "valence": 0.553,
+        "acousticness": 0.117,
+        "tempo": 128.964,
+        "speechiness": 0.075,
+        "instrumentalness": 0.079,
+        "liveness": 0.195,
+        "loudness": -7.184
+      },
+      "topGenres": [
+        {
+          "name": "nederpop",
+          "count": 28,
+          "percentage": 13,
+          "color": "#f59e0b"
+        },
+        {
+          "name": "punk",
+          "count": 20,
+          "percentage": 10,
+          "color": "#f97316"
+        },
+        {
+          "name": "rock",
+          "count": 14,
+          "percentage": 7,
+          "color": "#ef4444"
+        },
+        {
+          "name": "pop punk",
+          "count": 13,
+          "percentage": 6,
+          "color": "#fb923c"
+        },
+        {
+          "name": "skate punk",
+          "count": 12,
+          "percentage": 6,
+          "color": "#fdba74"
+        }
+      ],
+      "subgenres": [
+        "pop punk",
+        "skate punk",
+        "classic rock"
+      ],
+      "topArtists": [
+        {
+          "rank": 1,
+          "name": "Hang Youth",
+          "topTrack": "JE HAAT GEEN MAANDAG, JE HAAT KAPITALISME",
+          "appearances": 13,
+          "score": 944
+        },
+        {
+          "rank": 2,
+          "name": "WIES",
+          "topTrack": "Soms Is Het Te Laat",
+          "appearances": 10,
+          "score": 710
+        },
+        {
+          "rank": 3,
+          "name": "blink-182",
+          "topTrack": "Stockholm Syndrome",
+          "appearances": 9,
+          "score": 449
+        },
+        {
+          "rank": 4,
+          "name": "Opgezwolle",
+          "topTrack": "Regendans",
+          "appearances": 2,
+          "score": 160
+        },
+        {
+          "rank": 5,
+          "name": "Rammstein",
+          "topTrack": "Deutschland",
+          "appearances": 2,
+          "score": 137
+        },
+        {
+          "rank": 6,
+          "name": "Dire Straits",
+          "topTrack": "Sultans Of Swing",
+          "appearances": 2,
+          "score": 134
+        },
+        {
+          "rank": 7,
+          "name": "Metallica",
+          "topTrack": "Enter Sandman - Remastered 2021",
+          "appearances": 2,
+          "score": 125
+        },
+        {
+          "rank": 8,
+          "name": "Paolo Nutini",
+          "topTrack": "Through The Echoes",
+          "appearances": 2,
+          "score": 107
+        },
+        {
+          "rank": 9,
+          "name": "The Offspring",
+          "topTrack": "The Kids Aren't Alright",
+          "appearances": 2,
+          "score": 100
+        },
+        {
+          "rank": 10,
+          "name": "DoeMaarDave",
+          "topTrack": "Fuifje",
+          "appearances": 1,
+          "score": 98
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "label": "Nederpop / Hollands",
+      "emoji": "🇳🇱",
+      "color": "#f59e0b",
+      "background": "linear-gradient(135deg, #f59e0b22 0%, #f59e0b44 100%)",
+      "mood": "Fun · Energetic · Positive",
+      "trackCount": 100,
+      "uniqueArtists": 80,
+      "uniqueGenres": 70,
+      "audioFeatures": {
+        "danceability": 0.589,
+        "energy": 0.707,
+        "valence": 0.556,
+        "acousticness": 0.226,
+        "tempo": 128.124,
+        "speechiness": 0.064,
+        "instrumentalness": 0.221,
+        "liveness": 0.212,
+        "loudness": -8.707
+      },
+      "topGenres": [
+        {
+          "name": "nederpop",
+          "count": 21,
+          "percentage": 9,
+          "color": "#f59e0b"
+        },
+        {
+          "name": "hollands",
+          "count": 21,
+          "percentage": 9,
+          "color": "#fbbf24"
+        },
+        {
+          "name": "punk",
+          "count": 13,
+          "percentage": 6,
+          "color": "#f97316"
+        },
+        {
+          "name": "pop punk",
+          "count": 11,
+          "percentage": 5,
+          "color": "#fb923c"
+        },
+        {
+          "name": "rock",
+          "count": 11,
+          "percentage": 5,
+          "color": "#ef4444"
+        }
+      ],
+      "subgenres": [
+        "pop punk",
+        "skate punk",
+        "classic rock"
+      ],
+      "topArtists": [
+        {
+          "rank": 1,
+          "name": "Herman van Veen",
+          "topTrack": "Zo Vrolijk",
+          "appearances": 8,
+          "score": 596
+        },
+        {
+          "rank": 2,
+          "name": "Fleetwood Mac",
+          "topTrack": "Dreams - 2004 Remaster",
+          "appearances": 6,
+          "score": 358
+        },
+        {
+          "rank": 3,
+          "name": "blink-182",
+          "topTrack": "ONE MORE TIME",
+          "appearances": 6,
+          "score": 345
+        },
+        {
+          "rank": 4,
+          "name": "Electric Callboy",
+          "topTrack": "Hypa Hypa",
+          "appearances": 3,
+          "score": 237
+        },
+        {
+          "rank": 5,
+          "name": "Hang Youth",
+          "topTrack": "JE HAAT GEEN MAANDAG, JE HAAT KAPITALISME",
+          "appearances": 4,
+          "score": 133
+        },
+        {
+          "rank": 6,
+          "name": "BZB",
+          "topTrack": "Echte Vrienden",
+          "appearances": 4,
+          "score": 118
+        },
+        {
+          "rank": 7,
+          "name": "Snollebollekes",
+          "topTrack": "Links Rechts",
+          "appearances": 2,
+          "score": 109
+        },
+        {
+          "rank": 8,
+          "name": "De Alpenzusjes",
+          "topTrack": "Kontebonke",
+          "appearances": 1,
+          "score": 96
+        },
+        {
+          "rank": 9,
+          "name": "Clumdoipethi",
+          "topTrack": "Mojax",
+          "appearances": 1,
+          "score": 94
+        },
+        {
+          "rank": 10,
+          "name": "Goldband",
+          "topTrack": "Noodgeval",
+          "appearances": 1,
+          "score": 93
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "Punk / Rock",
+      "emoji": "🎸",
+      "color": "#f97316",
+      "background": "linear-gradient(135deg, #f9731622 0%, #f9731644 100%)",
+      "mood": "Rebellious · Organic",
+      "trackCount": 100,
+      "uniqueArtists": 83,
+      "uniqueGenres": 49,
+      "audioFeatures": {
+        "danceability": 0.512,
+        "energy": 0.544,
+        "valence": 0.485,
+        "acousticness": 0.418,
+        "tempo": 122.883,
+        "speechiness": 0.073,
+        "instrumentalness": 0.369,
+        "liveness": 0.163,
+        "loudness": -12.019
+      },
+      "topGenres": [
+        {
+          "name": "punk",
+          "count": 17,
+          "percentage": 10,
+          "color": "#f97316"
+        },
+        {
+          "name": "rock",
+          "count": 16,
+          "percentage": 9,
+          "color": "#ef4444"
+        },
+        {
+          "name": "pop punk",
+          "count": 15,
+          "percentage": 9,
+          "color": "#fb923c"
+        },
+        {
+          "name": "emo",
+          "count": 13,
+          "percentage": 8,
+          "color": "#64748b"
+        },
+        {
+          "name": "skate punk",
+          "count": 11,
+          "percentage": 6,
+          "color": "#fdba74"
+        }
+      ],
+      "subgenres": [
+        "pop punk",
+        "skate punk",
+        "classic rock"
+      ],
+      "topArtists": [
+        {
+          "rank": 1,
+          "name": "blink-182",
+          "topTrack": "Feeling This",
+          "appearances": 8,
+          "score": 483
+        },
+        {
+          "rank": 2,
+          "name": "BZB",
+          "topTrack": "Een Zee Van Tijd",
+          "appearances": 6,
+          "score": 376
+        },
+        {
+          "rank": 3,
+          "name": "White As Snow",
+          "topTrack": "Miracle of Grace",
+          "appearances": 2,
+          "score": 162
+        },
+        {
+          "rank": 4,
+          "name": "Er Pianista de Tor Bella",
+          "topTrack": "Er Baretto",
+          "appearances": 2,
+          "score": 148
+        },
+        {
+          "rank": 5,
+          "name": "AC/DC",
+          "topTrack": "You Shook Me All Night Long",
+          "appearances": 2,
+          "score": 133
+        },
+        {
+          "rank": 6,
+          "name": "Rise Against",
+          "topTrack": "Prayer Of The Refugee",
+          "appearances": 3,
+          "score": 123
+        },
+        {
+          "rank": 7,
+          "name": "Fleetwood Mac",
+          "topTrack": "The Chain - 2004 Remaster",
+          "appearances": 2,
+          "score": 114
+        },
+        {
+          "rank": 8,
+          "name": "Ricardo Henriquez",
+          "topTrack": "Beautiful Place",
+          "appearances": 1,
+          "score": 100
+        },
+        {
+          "rank": 9,
+          "name": "King Crimson",
+          "topTrack": "21st Century Schizoid Man - Including \"Mirrors\"",
+          "appearances": 2,
+          "score": 99
+        },
+        {
+          "rank": 10,
+          "name": "Iggy Pop",
+          "topTrack": "The Passenger",
+          "appearances": 1,
+          "score": 98
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "label": "Metalcore / Post-hardcore",
+      "emoji": "🔥",
+      "color": "#b91c1c",
+      "background": "linear-gradient(135deg, #b91c1c22 0%, #b91c1c44 100%)",
+      "mood": "Intense · High Energy · Dark",
+      "trackCount": 100,
+      "uniqueArtists": 42,
+      "uniqueGenres": 28,
+      "audioFeatures": {
+        "danceability": 0.441,
+        "energy": 0.871,
+        "valence": 0.327,
+        "acousticness": 0.024,
+        "tempo": 129.03,
+        "speechiness": 0.109,
+        "instrumentalness": 0.04,
+        "liveness": 0.228,
+        "loudness": -4.753
+      },
+      "topGenres": [
+        {
+          "name": "metalcore",
+          "count": 73,
+          "percentage": 22,
+          "color": "#b91c1c"
+        },
+        {
+          "name": "post-hardcore",
+          "count": 38,
+          "percentage": 11,
+          "color": "#c026d3"
+        },
+        {
+          "name": "metal",
+          "count": 33,
+          "percentage": 10,
+          "color": "#dc2626"
+        },
+        {
+          "name": "hardcore punk",
+          "count": 24,
+          "percentage": 7,
+          "color": "#a21caf"
+        },
+        {
+          "name": "hardcore",
+          "count": 18,
+          "percentage": 5,
+          "color": "#c026d3"
+        }
+      ],
+      "subgenres": [
+        "post-hardcore",
+        "hardcore punk",
+        "progressive metal"
+      ],
+      "topArtists": [
+        {
+          "rank": 1,
+          "name": "Sleep Token",
+          "topTrack": "Caramel",
+          "appearances": 13,
+          "score": 779
+        },
+        {
+          "rank": 2,
+          "name": "Architects",
+          "topTrack": "Animals",
+          "appearances": 9,
+          "score": 628
+        },
+        {
+          "rank": 3,
+          "name": "Bring Me The Horizon",
+          "topTrack": "Throne",
+          "appearances": 10,
+          "score": 462
+        },
+        {
+          "rank": 4,
+          "name": "Stray From The Path",
+          "topTrack": "III",
+          "appearances": 6,
+          "score": 379
+        },
+        {
+          "rank": 5,
+          "name": "Rise Against",
+          "topTrack": "Savior",
+          "appearances": 6,
+          "score": 255
+        },
+        {
+          "rank": 6,
+          "name": "Slipknot",
+          "topTrack": "(sic)",
+          "appearances": 4,
+          "score": 249
+        },
+        {
+          "rank": 7,
+          "name": "Turnstile",
+          "topTrack": "BLACKOUT",
+          "appearances": 7,
+          "score": 247
+        },
+        {
+          "rank": 8,
+          "name": "Enter Shikari",
+          "topTrack": "Sorry You're Not a Winner",
+          "appearances": 5,
+          "score": 235
+        },
+        {
+          "rank": 9,
+          "name": "We Came As Romans",
+          "topTrack": "Black Hole",
+          "appearances": 3,
+          "score": 202
+        },
+        {
+          "rank": 10,
+          "name": "Electric Callboy",
+          "topTrack": "Elevator Operator",
+          "appearances": 3,
+          "score": 185
+        }
+      ]
+    }
+  ],
+  "overview": {
+    "totalTracks": 401,
+    "yearRange": "2022 — 2025",
+    "yearsCount": 4,
+    "loyalArtist": {
+      "name": "blink-182",
+      "score": 1277,
+      "years": [
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "dominantPhase": {
+      "year": 2023,
+      "uniqueGenres": 70
+    },
+    "topArtistsAllTime": [
+      {
+        "rank": 1,
+        "name": "blink-182",
+        "score": 1277,
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "rank": 2,
+        "name": "Hang Youth",
+        "score": 1100,
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "rank": 3,
+        "name": "Sleep Token",
+        "score": 779,
+        "years": [
+          2025
+        ],
+        "yearCount": 1
+      },
+      {
+        "rank": 4,
+        "name": "WIES",
+        "score": 710,
+        "years": [
+          2022
+        ],
+        "yearCount": 1
+      },
+      {
+        "rank": 5,
+        "name": "Architects",
+        "score": 628,
+        "years": [
+          2025
+        ],
+        "yearCount": 1
+      },
+      {
+        "rank": 6,
+        "name": "Herman van Veen",
+        "score": 596,
+        "years": [
+          2023
+        ],
+        "yearCount": 1
+      },
+      {
+        "rank": 7,
+        "name": "BZB",
+        "score": 494,
+        "years": [
+          2023,
+          2024
+        ],
+        "yearCount": 2
+      },
+      {
+        "rank": 8,
+        "name": "Fleetwood Mac",
+        "score": 472,
+        "years": [
+          2023,
+          2024
+        ],
+        "yearCount": 2
+      },
+      {
+        "rank": 9,
+        "name": "Bring Me The Horizon",
+        "score": 462,
+        "years": [
+          2025
+        ],
+        "yearCount": 1
+      },
+      {
+        "rank": 10,
+        "name": "Electric Callboy",
+        "score": 422,
+        "years": [
+          2023,
+          2025
+        ],
+        "yearCount": 2
+      }
+    ],
+    "recurringArtists": [
+      {
+        "name": "Enter Shikari",
+        "years": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "yearCount": 4
+      },
+      {
+        "name": "Hang Youth",
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "name": "blink-182",
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "name": "Dire Straits",
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "name": "My Chemical Romance",
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "yearCount": 3
+      },
+      {
+        "name": "Rise Against",
+        "years": [
+          2022,
+          2024,
+          2025
+        ],
+        "yearCount": 3
+      }
+    ]
+  },
+  "recurringArtists": [
+    {
+      "name": "Enter Shikari",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "yearCount": 4
+    },
+    {
+      "name": "Hang Youth",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "yearCount": 3
+    },
+    {
+      "name": "blink-182",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "yearCount": 3
+    },
+    {
+      "name": "Dire Straits",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "yearCount": 3
+    },
+    {
+      "name": "My Chemical Romance",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "yearCount": 3
+    },
+    {
+      "name": "Rise Against",
+      "years": [
+        2022,
+        2024,
+        2025
+      ],
+      "yearCount": 3
+    }
+  ]
+}
