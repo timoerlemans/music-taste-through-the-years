@@ -1,5 +1,5 @@
-import { emojiMap, getEmojiForGenre } from '../config/emoji-map.js';
-import { genreColorMap, getColorForGenre } from '../config/color-map.js';
+import { getEmojiForGenre } from '../config/emoji-map.js';
+import { getColorForGenre } from '../config/color-map.js';
 import { getMoodFromFeatures } from '../config/mood-rules.js';
 
 function capitalizeWords(str) {
@@ -40,8 +40,8 @@ export function generateLabels(genreData, audioFeatures) {
 
   const primaryGenre = topGenres[0]?.name || 'mixed';
   const label = generateLabel(topGenres);
-  const emoji = getEmojiForGenre(primaryGenre);
-  const color = getColorForGenre(primaryGenre);
+  const emoji = getEmojiForGenre(primaryGenre, audioFeatures);
+  const color = getColorForGenre(primaryGenre, audioFeatures);
   const background = generateBackground(color);
   const mood = getMoodFromFeatures(audioFeatures, topGenres);
 

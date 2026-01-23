@@ -1,25 +1,131 @@
 const genreMoods = {
+  // Rock & Metal
   'punk': 'Rebellious',
   'pop punk': 'Energetic',
   'hardcore': 'Aggressive',
   'metal': 'Intense',
   'metalcore': 'Intense',
+  'classic rock': 'Classic',
+  'progressive rock': 'Complex',
+  'rock': 'Raw',
+  'grunge': 'Gritty',
+  'alternative': 'Eclectic',
+
+  // Electronic
   'techno': 'Danceable',
   'minimal techno': 'Hypnotic',
+  'house': 'Groovy',
+  'trance': 'Euphoric',
+  'dubstep': 'Heavy',
+  'drum and bass': 'Frenetic',
+  'edm': 'Energetic',
+  'electronic': 'Synthetic',
+  'gabber': 'Hardcore',
+
+  // Dark & Gothic
   'industrial': 'Dark',
   'gothic rock': 'Melancholic',
   'darkwave': 'Atmospheric',
+  'goth': 'Brooding',
+
+  // Emotional & Indie
   'emo': 'Emotional',
   'indie': 'Introspective',
+  'indie rock': 'Thoughtful',
+  'lo-fi': 'Mellow',
+
+  // Pop & Dance
   'pop': 'Upbeat',
+  'synthpop': 'Electronic',
+  'europop': 'Catchy',
+  'disco': 'Funky',
+  'dance pop': 'Fun',
+
+  // Dutch
   'nederpop': 'Fun',
   'hollands': 'Nostalgic',
-  'classic rock': 'Classic',
-  'progressive rock': 'Complex',
+  'dutch': 'Local',
+
+  // New genres - Jazz & Classical
+  'jazz': 'Smooth',
+  'bebop': 'Virtuosic',
+  'swing': 'Swinging',
+  'classical': 'Refined',
+  'orchestra': 'Grand',
+  'symphony': 'Majestic',
+  'opera': 'Dramatic',
+  'baroque': 'Ornate',
+  'chamber': 'Intimate',
+
+  // Country & Folk
+  'country': 'Heartfelt',
+  'bluegrass': 'Authentic',
+  'americana': 'Rootsy',
+  'folk': 'Intimate',
+  'acoustic': 'Stripped-down',
+  'singer-songwriter': 'Personal',
+
+  // Hip Hop & R&B
+  'hip hop': 'Bold',
+  'hip-hop': 'Bold',
+  'rap': 'Fierce',
+  'trap': 'Hard',
+  'drill': 'Menacing',
+  'grime': 'Raw',
+  'r&b': 'Soulful',
+  'rnb': 'Soulful',
+  'soul': 'Soulful',
+  'neo-soul': 'Smooth',
+  'motown': 'Classic',
+
+  // Blues
+  'blues': 'Soulful',
+  'delta blues': 'Raw',
+  'chicago blues': 'Electric',
+
+  // Reggae & Latin
+  'reggae': 'Chill',
+  'dancehall': 'Vibrant',
+  'ska': 'Upbeat',
+  'dub': 'Spacey',
+  'latin': 'Passionate',
+  'salsa': 'Fiery',
+  'bachata': 'Romantic',
+  'reggaeton': 'Infectious',
+  'cumbia': 'Festive',
+  'bossa nova': 'Breezy',
+
+  // Funk
+  'funk': 'Groovy',
+  'boogie': 'Danceable',
+  'p-funk': 'Funky',
+
+  // World
+  'afrobeat': 'Rhythmic',
+  'african': 'Vibrant',
+  'indian': 'Meditative',
+  'celtic': 'Mystical',
+  'world': 'Global',
+
+  // Ambient & Experimental
+  'ambient': 'Atmospheric',
+  'drone': 'Meditative',
+  'soundscape': 'Immersive',
+  'new age': 'Peaceful',
+  'meditation': 'Tranquil',
+  'experimental': 'Avant-garde',
+  'avant-garde': 'Challenging',
+  'noise': 'Abrasive',
+  'idm': 'Cerebral',
+
+  // Retro & Glam
   'new wave': 'Retro',
-  'synthpop': 'Electronic',
-  'gabber': 'Hardcore',
-  'europop': 'Catchy'
+  'glam rock': 'Flamboyant',
+  'glam': 'Theatrical',
+
+  // Children's
+  'children': 'Playful',
+  'kids': 'Fun'
 };
 
 function getDescriptorFromFeatures(features) {

@@ -3,15 +3,15 @@
     "totalTracks": 401,
     "yearRange": "2022 — 2025",
     "yearsCount": 4,
-    "generatedAt": "2026-01-23T14:52:06.686Z"
+    "generatedAt": "2026-01-23T18:23:12.961Z"
   },
   "years": [
     {
       "year": 2022,
       "label": "Nederpop / Punk",
       "emoji": "🇳🇱",
-      "color": "#f59e0b",
-      "background": "linear-gradient(135deg, #f59e0b22 0%, #f59e0b44 100%)",
+      "color": "#ec4899",
+      "background": "linear-gradient(135deg, #ec489922 0%, #ec489944 100%)",
       "mood": "Political · Fun · Dutch Language",
       "trackCount": 101,
       "uniqueArtists": 67,
@@ -50,13 +50,13 @@
           "name": "pop punk",
           "count": 13,
           "percentage": 6,
-          "color": "#fb923c"
+          "color": "#f97316"
         },
         {
           "name": "skate punk",
           "count": 12,
           "percentage": 6,
-          "color": "#fdba74"
+          "color": "#f97316"
         }
       ],
       "subgenres": [
@@ -140,9 +140,9 @@
     {
       "year": 2023,
       "label": "Nederpop / Hollands",
-      "emoji": "🇳🇱",
-      "color": "#f59e0b",
-      "background": "linear-gradient(135deg, #f59e0b22 0%, #f59e0b44 100%)",
+      "emoji": "🎤",
+      "color": "#ec4899",
+      "background": "linear-gradient(135deg, #ec489922 0%, #ec489944 100%)",
       "mood": "Fun · Energetic · Positive",
       "trackCount": 100,
       "uniqueArtists": 80,
@@ -169,7 +169,7 @@
           "name": "hollands",
           "count": 21,
           "percentage": 9,
-          "color": "#fbbf24"
+          "color": "#f59e0b"
         },
         {
           "name": "punk",
@@ -181,7 +181,7 @@
           "name": "pop punk",
           "count": 11,
           "percentage": 5,
-          "color": "#fb923c"
+          "color": "#f97316"
         },
         {
           "name": "rock",
@@ -272,8 +272,8 @@
       "year": 2024,
       "label": "Punk / Rock",
       "emoji": "🎸",
-      "color": "#f97316",
-      "background": "linear-gradient(135deg, #f9731622 0%, #f9731644 100%)",
+      "color": "#ef4444",
+      "background": "linear-gradient(135deg, #ef444422 0%, #ef444444 100%)",
       "mood": "Rebellious · Organic",
       "trackCount": 100,
       "uniqueArtists": 83,
@@ -306,7 +306,7 @@
           "name": "pop punk",
           "count": 15,
           "percentage": 9,
-          "color": "#fb923c"
+          "color": "#f97316"
         },
         {
           "name": "emo",
@@ -318,7 +318,7 @@
           "name": "skate punk",
           "count": 11,
           "percentage": 6,
-          "color": "#fdba74"
+          "color": "#f97316"
         }
       ],
       "subgenres": [
@@ -402,9 +402,9 @@
     {
       "year": 2025,
       "label": "Metalcore / Post-hardcore",
-      "emoji": "🔥",
-      "color": "#b91c1c",
-      "background": "linear-gradient(135deg, #b91c1c22 0%, #b91c1c44 100%)",
+      "emoji": "🤘",
+      "color": "#dc2626",
+      "background": "linear-gradient(135deg, #dc262622 0%, #dc262644 100%)",
       "mood": "Intense · High Energy · Dark",
       "trackCount": 100,
       "uniqueArtists": 42,
@@ -425,7 +425,7 @@
           "name": "metalcore",
           "count": 73,
           "percentage": 22,
-          "color": "#b91c1c"
+          "color": "#dc2626"
         },
         {
           "name": "post-hardcore",
@@ -443,7 +443,7 @@
           "name": "hardcore punk",
           "count": 24,
           "percentage": 7,
-          "color": "#a21caf"
+          "color": "#c026d3"
         },
         {
           "name": "hardcore",
